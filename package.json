@@ -1,0 +1,19 @@
+{
+  "name": "middleware-withoutexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yudiz-nisha-solanki/middleware-withoutexpress.git"
+  },
+  "author": "Nisha Solanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yudiz-nisha-solanki/middleware-withoutexpress/issues"
+  },
+  "homepage": "https://github.com/yudiz-nisha-solanki/middleware-withoutexpress#readme"
+}
