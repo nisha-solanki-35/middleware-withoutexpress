@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yudiz-nisha-solanki/middleware-withoutexpress/issues"
   },
-  "homepage": "https://github.com/yudiz-nisha-solanki/middleware-withoutexpress#readme"
+  "homepage": "https://github.com/yudiz-nisha-solanki/middleware-withoutexpress#readme",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
 }
