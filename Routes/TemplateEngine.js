@@ -3,11 +3,11 @@ const fs = require('fs');
 const path = require('path');
 
 function TemplateEngine (req, res) {
-    console.log('hi')
     const usersData = fs.readFileSync(path.dirname(__dirname) + '/files/Users.json', 'utf-8')
-    // const template = fs.readFileSync(path.dirname(__dirname) + '/views/pages/Users.ejs', 'utf-8')
-    const template = ejs.render(path.dirname(__dirname) + '/views/pages/index', usersData)
-    res.end(template)
+    const template = fs.readFileSync(path.dirname(__dirname) + '/views/pages/index.ejs', 'utf-8')
+    const userData = JSON.parse(usersData)
+    const renderTemplate = ejs.render(template, { userData } )
+    return renderTemplate
 }
 
 module.exports = TemplateEngine

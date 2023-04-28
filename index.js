@@ -4,7 +4,8 @@ const template = require('./Routes/TemplateEngine')
 
 const server = http.createServer((req, res) => {
 //   CheckRoute(req, res)
-    template(req, res)
+    const temp = template(req, res)
+    res.end(temp)
 })
 
 server.listen(8080, () => {
